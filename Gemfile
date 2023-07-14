@@ -3,16 +3,17 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.1"
 
+gem "bootsnap", require: false
+gem "bootstrap", "~> 5.3.0.alpha3"
+gem "importmap-rails"
+gem "jbuilder"
+gem "puma", "~> 5.0"
 gem "rails", "~> 7.0.4", ">= 7.0.4.3"
+gem "redis", "~> 4.0"
 gem "sprockets-rails"
 gem "sqlite3", "~> 1.4"
-gem "puma", "~> 5.0"
-gem "importmap-rails"
-gem "turbo-rails"
 gem "stimulus-rails"
-gem "jbuilder"
-gem "redis", "~> 4.0"
-gem "bootsnap", require: false
+gem "turbo-rails"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
