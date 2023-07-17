@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Board Details</h1>
+
+  <h3>Name: <%= @board.name %></h3>
+  <h3>Email: <%= @board.email %></h3>
+
+  <div class="minesweeper-board">
+    <% @board.visual.each do |row| %>
+      <div class="">
+        <% row.each do |cell| %>
+          <%= cell == :x ? '💣' : '◻️' %>
+        <% end %>
+        <br>
+      </div>
+    <% end %>
+  </div>
+
+  <%= link_to 'Back', root_path, class: 'btn btn-primary' %>
+</div>

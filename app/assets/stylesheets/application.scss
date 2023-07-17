@@ -1,1 +1,6 @@
 @import "bootstrap";
+
+.minesweeper-board {
+  overflow-x: scroll;
+  white-space: nowrap;
+}

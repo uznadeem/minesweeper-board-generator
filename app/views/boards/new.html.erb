@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="card-title text-center">Generate Minesweeper Board</h1>
+
+          <%= form_tag boards_path, method: :post do %>
+            <div class="mb-3">
+              <%= label_tag :email, 'Email', class: 'form-label' %>
+              <%= email_field_tag :email, '', class: 'form-control', required: true %>
+            </div>
+
+            <div class="mb-3">
+              <%= label_tag :width, 'Width', class: 'form-label' %>
+              <%= number_field_tag :width, '', class: 'form-control', required: true %>
+            </div>
+
+            <div class="mb-3">
+              <%= label_tag :height, 'Height', class: 'form-label' %>
+              <%= number_field_tag :height, '', class: 'form-control', required: true %>
+            </div>
+
+            <div class="mb-3">
+              <%= label_tag :mines, 'Number of Mines', class: 'form-label' %>
+              <%= number_field_tag :mines, '', class: 'form-control', required: true %>
+            </div>
+
+            <div class="mb-3">
+              <%= label_tag :name, 'Name', class: 'form-label' %>
+              <%= text_field_tag :name, '', class: 'form-control', required: true %>
+            </div>
+
+            <div class="d-grid mb-3">
+              <%= submit_tag 'Generate Board', class: 'btn btn-primary' %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
