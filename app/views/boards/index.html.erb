@@ -1,0 +1,9 @@
+<div class="container">
+  <h1 class="text-center mb-4">All Generated Boards</h1>
+
+  <%= render partial: 'recent_boards', locals: { recent_boards: @boards } %>
+
+  <div class="text-center mt-3">
+    <%= link_to "Back", root_path, class: "btn btn-primary custom-button" %>
+  </div>
+</div>

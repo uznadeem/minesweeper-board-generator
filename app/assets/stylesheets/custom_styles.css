@@ -1,0 +1,116 @@
+/* Custom styles for form inputs */
+.custom-input {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+/* Custom styles for buttons */
+.custom-button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Custom styles for the card */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+/* Custom styles for the card title */
+.card-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Custom styles for the card body */
+.card-body {
+    padding: 30px;
+}
+
+/* Custom styles for the "View All Generated Boards" link */
+.custom-button.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Custom styles for the "Generate Board" button */
+.custom-button.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Custom styles for the "Back" link */
+.btn-primary {
+    margin-top: 10px;
+}
+
+/* app/assets/stylesheets/application.css (or application.scss) */
+
+/* Custom CSS for recent board entries */
+.recent-boards-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.recent-board {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.recent-board h5.card-title {
+    margin-bottom: 10px;
+}
+
+.recent-board p.card-text {
+    font-size: 14px;
+}
+
+.minesweeper-board div {
+    font-size: 16px;
+    /* Reduce the font size for smaller cells */
+    line-height: 1;
+}
+
+.board-container {
+    max-height: 500px;
+    /* Set the maximum height of the container, adjust as needed */
+    overflow-y: auto;
+    /* Enable vertical scroll for overflow */
+    border: 1px solid #ddd;
+    /* Optional: Add a border to the container */
+    border-radius: 5px;
+    /* Optional: Add border-radius for a nicer look */
+    padding: 10px;
+    /* Optional: Add some padding for better spacing */
+    max-width: 400px;
+    /* Set a maximum width for the container */
+}
+
+/* Custom CSS for board rows and cells */
+.board-row {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Prevent wrapping of cells to keep them close together */
+}
+
+.board-cell {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    /* Adjust font size for better fit */
+    height: 32px;
+    /* Adjust cell height to fit emojis */
+    width: 32px;
+    /* Adjust cell width to fit emojis */
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    margin: 0px;
+}

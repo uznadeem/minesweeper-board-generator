@@ -1,0 +1,20 @@
+<!-- _recent_boards.html.erb (views/boards/_recent_boards.html.erb) -->
+
+<% if recent_boards.present? %>
+
+  <div class="recent-boards-list">
+    <% recent_boards.each do |board| %>
+      <div class="card recent-board">
+        <div class="card-body">
+          <h5 class="card-title"><%= link_to board.name, board_path(board) %></h5>
+          <p class="card-text">
+            <strong>Email:</strong> <%= board.email %><br>
+            <strong>Created on:</strong> <%= board.created_at.strftime('%b %e, %Y %l:%M %p') %>
+          </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <p>No boards have been generated yet.</p>
+<% end %>
