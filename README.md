@@ -1,6 +1,6 @@
 # Minesweeper Rails Application
 
-https://www.google.com/imgres?imgurl=https%3A%2F%2Fminesweeper.online%2Fimg%2Fhomepage%2Fbeginner.png&tbnid=iXep7vky1IwMJM&vet=12ahUKEwji8K7vlZmAAxXmmicCHZVqCnQQMygDegUIARDqAQ..i&imgrefurl=https%3A%2F%2Fminesweeper.online%2F&docid=YXCqjQ2O_2s4GM&w=210&h=261&q=minesweeper&ved=2ahUKEwji8K7vlZmAAxXmmicCHZVqCnQQMygDegUIARDqAQ
+![Minesweeper](minesweeper.png)
 
 ## Job Description (JD)
 
