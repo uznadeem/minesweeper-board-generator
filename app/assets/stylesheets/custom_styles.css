@@ -88,7 +88,7 @@
     /* Optional: Add border-radius for a nicer look */
     padding: 10px;
     /* Optional: Add some padding for better spacing */
-    max-width: 400px;
+    max-width: 100%;
     /* Set a maximum width for the container */
 }
 
