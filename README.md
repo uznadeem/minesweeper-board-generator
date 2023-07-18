@@ -1,6 +1,5 @@
 # Minesweeper Rails Application
 
-![Minesweeper](minesweeper.png)
 
 ## Job Description (JD)
 
