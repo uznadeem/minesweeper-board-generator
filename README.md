@@ -26,8 +26,7 @@ Follow the instructions below to run the Minesweeper Rails application on your l
 
 1. Clone this repository to your local machine:
 
-```bash
-git clone https://github.com/your-username/minesweeper.git
+git clone https://github.com/uznadeem/minesweeper-board-generator
 cd minesweeper
 
 Install the required gems:
@@ -48,16 +47,16 @@ You can access the Minesweeper application at http://localhost:3000.
 Minesweeper Board Generation
 The board generator algorithm is the main component of this application. It works in a performant manner for boards of any dimension. The algorithm returns a two-dimensional array of objects that represent the state of a Minesweeper board before the game starts. The algorithm is implemented in the MinesweeperService class, which can be found in the app/services/minesweeper_service.rb file.
 
-Recent Boards
+### Recent Boards
 The application lists the ten most recently generated boards on the home page. This feature is implemented by fetching the ten most recent boards from the database using the @recent_boards instance variable in the BoardsController.
 
-Validations
+### Validations
 The application ensures that the number of mines specified by the user is not greater than the size of the board. This validation is performed in the BoardsController using a before_action filter.
 
-Styling
+### Styling
 The user interface of the application has been enhanced with custom CSS styles to make it more visually appealing. The board cells are styled to fit the emojis properly, and the overall layout is designed to be responsive and user-friendly.
 
-Additional Features
+### Additional Features
 The application has been designed to meet the requirements of the JD, but additional features can be added to enhance the user experience. Some ideas for further improvements include:
 
 Adding pagination to the list of all generated boards to improve performance when there are a large number of boards.
@@ -66,4 +65,4 @@ Enhancing the board generation algorithm to support custom difficulty levels and
 Contributing
 We welcome contributions from the community! If you find any bugs or have ideas for new features, please feel free to open an issue or submit a pull request.
 
-Happy Minesweeping!
+### Happy Minesweeping! :)
