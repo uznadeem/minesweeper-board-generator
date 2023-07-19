@@ -25,26 +25,36 @@ Follow the instructions below to run the Minesweeper Rails application on your l
 
 1. Clone this repository to your local machine:
 
+```
 git clone https://github.com/uznadeem/minesweeper-board-generator
 cd minesweeper
+```
 
 Install the required gems:
+```
 bundle install
+```
 
 Create and migrate the database:
+
+```
 rails db:create
 rails db:migrate
+```
 
 ## Running the Application
 
 Start the Rails server:
 
-rails server
+```
+rails s
+```
+
 You can access the Minesweeper application at http://localhost:3000.
 
 ## Solutions
 Minesweeper Board Generation
-The board generator algorithm is the main component of this application. It works in a performant manner for boards of any dimension. The algorithm returns a two-dimensional array of objects that represent the state of a Minesweeper board before the game starts. The algorithm is implemented in the MinesweeperService class, which can be found in the app/services/minesweeper_service.rb file.
+The board generator algorithm is the main component of this application. It works in a performant manner for boards of any dimension. The algorithm returns a two-dimensional array of objects that represent the state of a Minesweeper board before the game starts. The algorithm is implemented in the MinesweeperService class, which can be found in the `app/services/minesweeper_service.rb` file.
 
 ### Recent Boards
 The application lists the ten most recently generated boards on the home page. This feature is implemented by fetching the ten most recent boards from the database using the @recent_boards instance variable in the BoardsController.
